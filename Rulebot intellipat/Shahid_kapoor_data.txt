@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorUP | Empowering Your Business Growth</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="mentorup-logo.png" alt="MentorUP Logo" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Empower Your Business with MentorUP</h1>
+                <p>Unlock Your Potential with Expert Business Development Services</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <img src="hero-image.jpg" alt="Business Meeting" class="hero-img">
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At MentorUP, we specialize in driving business growth through innovative strategies, expert guidance, and personalized solutions. Whether you're a startup looking to scale or an established business aiming to expand, we're here to help you reach new heights.</p>
+                <h3>Our Mission</h3>
+                <p>To empower businesses with the tools, strategies, and mentorship they need to achieve sustainable growth and success.</p>
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Integrity</li>
+                    <li>Innovation</li>
+                    <li>Excellence</li>
+                    <li>Collaboration</li>
+                </ul>
+                <h3>Meet the Team</h3>
+                <div class="team">
+                    <div class="team-member">
+                        <img src="team-1.jpg" alt="Team Member 1">
+                        <h4>Name</h4>
+                        <p>Title</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team-2.jpg" alt="Team Member 2">
+                        <p>Title</p>
+                        <h4>Name</h4>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="service">
+                    <h3>Business Development</h3>
+                    <ul>
+                        <li>Market Research</li>
+                        <li>Lead Generation</li>
+                        <li>Sales Strategy</li>
+                        <li>Partnership Building</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3>Marketing Services</h3>
+                    <ul>
+                        <li>Digital Marketing (SEO, SEM, Social Media)</li>
+                        <li>Content Marketing</li>
+                        <li>Branding</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3>Consulting</h3>
+                    <ul>
+                        <li>Strategic Planning</li>
+                        <li>Business Model Innovation</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-stories" id="success-stories">
+            <div class="container">
+                <h2>Success Stories</h2>
+                </div>
+        </section>
+
+        </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
