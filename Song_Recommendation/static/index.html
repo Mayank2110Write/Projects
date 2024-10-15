@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input, select {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Song Recommendation</h1>
+    <form id="recommendationForm">
+        <label for="mood">Select Mood:</label>
+        <select id="mood" name="mood">
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="energetic">Energetic</option>
+            <option value="calm">Calm</option>
+        </select>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+
+    <h2 id="output"></h2>
+
+    <script>
+        document.getElementById('recommendationForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const mood = document.getElementById('mood').value;
+            const response = await fetch('/recommend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ mood: mood }),
+            });
+
+            const data = await response.json();
+            document.getElementById('output').innerText = 'Recommended Song: ' + data.song;
+        });
+    </script>
+
+</body>
+</html>
